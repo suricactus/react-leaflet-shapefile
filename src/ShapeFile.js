@@ -14,10 +14,12 @@ export default class ShapeFile extends Path {
     this.leafletElement = L.shapefile(data, props); 
   }
  
-   componentDidUpdate(prevProps) {
-   //todo
-    
-     this.setStyleIfChanged(prevProps, this.props);
+  createLeafletElement() {
+
+  }
+  
+  componentDidUpdate(prevProps) {
+    this.setStyleIfChanged(prevProps, this.props);
   }
 }
 

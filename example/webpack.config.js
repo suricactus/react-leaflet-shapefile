@@ -17,7 +17,7 @@ module.exports = {
   output: {
     path: __dirname + '/build/',
     filename: '[name].js',
-    publicPath: 'http://localhost:8000/build'
+    publicPath: 'http://localhost:8780/build'
   },
   plugins: [
     new webpack.DefinePlugin({
@@ -34,7 +34,7 @@ module.exports = {
     historyApiFallback: true,
     hot: true,
     inline: true,
-    port: 8000,
+    port: 8780,
     progress: true,
     stats: {
       cached: false
